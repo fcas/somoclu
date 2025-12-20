@@ -23,7 +23,7 @@
  * SOFTWARE.
 **/
 #include <string>
-using namespace std;
+using std::string;
 
 #ifndef SOMOCLU_H
 #define SOMOCLU_H

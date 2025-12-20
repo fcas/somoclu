@@ -1,7 +1,7 @@
 #include <Rcpp.h>
 #include <iostream>
 
-using namespace std;
+using std::string;
 using namespace Rcpp;
 
 #include"somoclu.h"
