@@ -1,6 +1,5 @@
 Package: Rsomoclu
 Version: 1.7.7
-Date: 2022-09-20
 Title: Somoclu
 Imports: kohonen
 Suggests:
