@@ -1,5 +1,5 @@
 #include <string>
-using namespace std;
+using std::string;
 
 #ifndef SOMOCLU_IO_H
 #define SOMOCLU_IO_H

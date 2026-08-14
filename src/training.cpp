@@ -33,7 +33,7 @@
 
 #include "somoclu.h"
 #ifndef HAVE_R
-using namespace std;
+using std::string;
 #endif
 // From https://stackoverflow.com/questions/17432502/how-can-i-measure-cpu-time-and-wall-clock-time-on-both-linux-windows
 //  Windows
@@ -72,6 +72,10 @@ using Rcpp::Rcerr;
 #else
 #include <iostream>
 #include <iomanip>
+using std::cout;
+using std::cerr;
+using std::endl;
+using std::flush;
 #endif  // HAVE_R
 
 void cuda_abort(string err) {
@@ -188,7 +192,7 @@ void train(int itask, float *data, svm_node **sparseData,
     /// Parameters for SOM
     ///
     if (radius0 == 0) {
-        unsigned int minDim = min(map.nSomX, map.nSomY);
+        unsigned int minDim = std::min(map.nSomX, map.nSomY);
         radius0 = minDim / 2.0f;              /// init radius for updating neighbors
     }
     if (radiusN == 0) {
